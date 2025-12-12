@@ -1,0 +1,53 @@
+{
+  "name": "@authyo/auth-js",
+  "version": "1.0.2",
+  "description": "Authyo passwordless authentication SDK for web apps (TypeScript).",
+  "license": "MIT",
+  "keywords": [
+    "authyo",
+    "authentication",
+    "passwordless",
+    "otp",
+    "otp-verification",
+    "login",
+    "webauthn",
+    "auth",
+    "identity",
+    "security",
+    "typescript",
+    "javascript"
+  ],
+  "author": "Authyo",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "clean": "rimraf dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/authyo/auth-js"
+  },
+  "bugs": {
+    "url": "https://github.com/authyo/auth-js/issues"
+  },
+  "homepage": "https://authyo.io/docs",
+  "devDependencies": {
+    "rimraf": "^5.0.5",
+    "typescript": "^5.6.3"
+  },
+  "engines": {
+    "node": ">=16"
+  }
+}
+
